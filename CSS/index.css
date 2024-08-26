@@ -1,0 +1,37 @@
+
+.navbar ul{
+    list-style-type: none;
+    background-color: bisque;
+    padding: 100px;
+    margin-left: 350px;
+    margin-right: 350px;
+
+    
+    
+}
+.navbar a{
+    color: grey;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+    
+}
+h1{
+    margin-top: 0px;
+    text-align:center;
+}
+.navbar a:hover{
+    color:blue;
+}
+
+.collumns{
+    display: flex;
+}
+.boxes{
+    display: flex;
+}
+.boxes h3{
+    margin: 40px;
+}
