@@ -5,6 +5,8 @@
     padding: 100px;
     margin-left: 350px;
     margin-right: 350px;
+    border: 2px solid black;
+    border-color: black;
 
     
     
@@ -18,7 +20,7 @@
     
     
 }
-h1{
+.navbar h1{
     margin-top: 0px;
     text-align:center;
 }
@@ -34,4 +36,76 @@ h1{
 }
 .boxes h3{
     margin: 40px;
+}
+/* This is my phone media quary */
+@media (max-width: 600px) {
+    .navbar ul {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+    
+    }
+    
+}
+/* This is my tablet media quary*/
+@media (min-width: 601px) {
+
+    .navbar ul {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        background-color: bisque;
+    
+    }
+    .navbar  h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: orange;
+    }
+    .navbar ul li{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        
+    }
+    .navbar a{
+        color: black;
+    }
+    
+}
+/* This is my tablet media quary*/
+@media (min-width: 768px) {
+    .navbar ul {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        background-color: lightyellow;
+        margin-top: 200px;
+        
+
+    }
+    
+    
+}
+
+@media (min-width: 992px) {
+    .navbar ul {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        background-color: lightyellow;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .navbar ul {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        background-color: bisque
+    }
+    
 }
