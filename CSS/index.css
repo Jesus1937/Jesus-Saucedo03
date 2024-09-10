@@ -99,6 +99,7 @@
     }
     
 }
+/* This is for anything bigger than a tablet*/
 @media (min-width: 1200px) {
     .navbar ul {
         width: 100%;
@@ -108,4 +109,7 @@
         background-color: bisque
     }
     
+}
+footer{
+    background-color: gray;
 }
