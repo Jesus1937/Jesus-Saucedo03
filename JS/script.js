@@ -14,7 +14,7 @@ footer.appendChild(copyright);
 
 
 var skills = ['JavaScript','html','CSS','Java','python'];
-var skillsSelection = document.getElementById("Skills");
+var skillsSelection = document.getElementById("skills");
 var skillsList = skillsSelection.querySelector('ul');
 
 for(var i=0;i<skills.length;i++){
@@ -66,3 +66,48 @@ function handleSubmit(event) {
 
 
 messageForm.addEventListener('submit', handleSubmit);
+
+
+    
+        
+
+// Creating a fetch
+fetch('https://api.github.com/users/jesus1937/repos')
+    .then((res) => {
+        if(!res.ok){
+            throw new Error('Request Failed');
+        }
+        return res.json();
+    })
+    .then(data =>{
+        return data;
+    })
+    .then(repositories =>{
+        if(repositories.length == 0){
+            console.log('No repositories found.')
+        } else{
+        console.log('Repositories:',repositories);
+
+        //Using DOM to make a list of Repos
+        var projectSection = document.getElementById('projects');
+            var projectList = projectSection.querySelector('ul');
+            console.log(projectList);
+
+    for(let i = 0; i < repositories.length; i++){
+        let project = document.createElement('li');
+
+        project.innerText = repositories[i].name;
+
+        projectList.appendChild(project);
+            }
+        }
+
+
+    })
+    .catch(error =>{
+        console.log('An error has occured. Check network or Server.', error);
+    });
+
+    
+
+    
