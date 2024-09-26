@@ -1,119 +1,126 @@
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     background-color: bisque;
-    padding: 100px;
-    margin-left: 350px;
-    margin-right: 350px;
+    padding: 20px; /* Reduced padding for a more streamlined look */
+    margin: 0 auto; /* Center the navbar */
+    width: 80%; /* Set width to keep it responsive */
     border: 2px solid black;
-    border-color: black;
-
-    
-    
 }
-.navbar a{
+
+.navbar a {
     color: grey;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
-    
-    
-}
-.navbar h1{
-    margin-top: 0px;
-    text-align:center;
-}
-.navbar a:hover{
-    color:blue;
 }
 
-.collumns{
-    display: flex;
+.navbar h1 {
+    margin-top: 0px;
+    text-align: center;
 }
-.boxes{
-    display: flex;
+
+.navbar a:hover {
+    color: blue;
 }
-.boxes h3{
+
+.columns {
+    display: flex;
+    justify-content: space-around; /* Even spacing between columns */
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around; /* Even spacing between boxes */
+}
+
+.boxes h3 {
     margin: 40px;
 }
-/* This is my phone media quary */
+
+/* Section spacing */
+section {
+    padding: 20px; /* Add padding around sections */
+    margin: 20px 0; /* Add margin between sections */
+    border: 1px solid #ddd; /* Light border for visual separation */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for sections */
+}
+
+/* This is my phone media query */
 @media (max-width: 600px) {
     .navbar ul {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 20px;
-    
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
     }
-    
 }
-/* This is my tablet media quary*/
-@media (min-width: 601px) {
 
+/* This is my tablet media query */
+@media (min-width: 601px) {
     .navbar ul {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 20px;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
         background-color: bisque;
-    
     }
-    .navbar  h1{
+    .navbar h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: orange;
     }
-    .navbar ul li{
+    .navbar ul li {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 25px;
-        
     }
-    .navbar a{
+    .navbar a {
         color: black;
     }
-    
 }
-/* This is my tablet media quary*/
+
+/* This is my 2nd tablet media query */
 @media (min-width: 768px) {
     .navbar ul {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 20px;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
         background-color: lightyellow;
-        margin-top: 200px;
-        
-
+        margin-top: 20px; /* Reduced margin for a cleaner look */
     }
-    
-    
 }
 
 @media (min-width: 992px) {
     .navbar ul {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 20px;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
         background-color: lightyellow;
     }
-    
 }
-/* This is for anything bigger than a tablet*/
+
+/* This is for anything bigger than a tablet */
 @media (min-width: 1200px) {
     .navbar ul {
         width: 25%;
-        margin-left: 50;
-        margin-right: 50;
-        padding:0px;
-        background-color: bisque
+        margin-left: auto; /* Center align */
+        margin-right: auto; /* Center align */
+        padding: 0px;
+        background-color: bisque;
     }
-    
-}
-footer{
-    background-color: gray;
 }
 
-html{
+footer {
+    background-color: gray;
+    padding: 10px; /* Add padding to footer */
+    text-align: center; /* Center the text in footer */
+}
+
+html {
     scroll-behavior: smooth;
 }
+
+
