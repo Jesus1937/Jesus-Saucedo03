@@ -5,25 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
     <link rel="stylesheet" href="css/index.css">
-    
+</head>
     
 <body>
     <header>
         <nav class="navbar">
             <h1>Jesus Saucedo</h1>
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#leave_message">Leave Message</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Leave_Message</h2>
+    <!--About me section-->
+    <section id="about">
+        <h2>About Jesus Saucedo</h2>
+        <p>Hello, my name is Jesus Saucedo, and I am a computer science major attending Los Medanos College and planning on transferring in the next year. I am 20 years old, and with the help of this course, I hope to improve my coding skills and create projects to better my ability to code. I like to exercise and fish as my hobby.
+            Whenever I have free time I also enjoy playing video games or watching a tv show. I really enjoy watching movies as well. Mainly action and comedys. I currently work part time at Lowes Home Improvement
+            and have been working there for the past 2 years as a receiver/stocker.
+        </p>
+    </section>
 
+    <!--Experience section--> 
+    <section id="experience">
+        <div class="columns">
+            <div class="column">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Receiver/Stocker at Lowe's Home Improvement Store.</li>
+                    <li>Polo's Landscaping</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+                <h2>Dates Worked</h2>
+                <ul>
+                    <li>Started December 26th, 2021, and still employed.</li>
+                    <li>Started June 10th, 2021, and also still employed.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Connect Section-->
+    <section id="connect">
+        <h2>Connect</h2>
+        <div class="boxes">
+            <div class="box">
+                <h3>Email</h3>
+                <ul>
+                    <li>jsaucedo1937@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>GitHub Username</h3>
+                <ul>
+                    <li>Jesus1937</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>LinkedIn</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jesus-saucedo-2a3103267/" target="_blank">Jesus Saucedo LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        
+    <!--Skills Section-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul></ul>    
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul></ul>
+    </section>
+
+    <!--Leave Message Section-->
+    <section id="leave_message">
+        <h2>Leave Message</h2>
         <form name="leave_message">
             <label for="username">Your Name:</label>
             <input type="text" id="username" name="username" required>
@@ -34,11 +104,9 @@
             <label for="usersMessage">Your Message:</label>
             <textarea id="usersMessage" name="usersMessage" required></textarea>
             
-            <button type ="submit">Submit</button>
-            <button type = "remove">Remove</button>
+            <button type="submit">Submit</button>
+            <button type="button">Remove Message</button>
         </form>
-    
-
     </section>
 
     <section id="messages">
@@ -46,13 +114,12 @@
         <ul></ul>
     </section>
 
-    
-    
-    
     <script src = "JS/script.js"></script>
-    
+
 </body>
 </html>
+
+
 
 
 
