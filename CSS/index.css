@@ -1,37 +1,177 @@
-
-.navbar ul{
+/* Navbar Styling */
+.navbar ul {
     list-style-type: none;
-    background-color: bisque;
-    padding: 100px;
-    margin-left: 350px;
-    margin-right: 350px;
-
-    
-    
+    background: linear-gradient(45deg, #f06, bisque);
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
 }
-.navbar a{
-    color: grey;
+
+/* Navbar Links */
+.navbar a {
+    color: #333;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
-    
-    
-}
-h1{
-    margin-top: 0px;
-    text-align:center;
-}
-.navbar a:hover{
-    color:blue;
+    transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+     
 }
 
-.collumns{
-    display: flex;
+/* Navbar Headline */
+.navbar h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif; 
+    color: #ff5722;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ffe082; /* Text shadow for extra flair */
 }
-.boxes{
-    display: flex;
+
+/* Hover Effects */
+.navbar a:hover {
+    color: #fff;
+    background-color: #ff9800; /* Bright background on hover */
+    border-radius: 5px; /* Rounded corners for links */
 }
-.boxes h3{
+
+/* Columns and Boxes Layout */
+.columns {
+    display: flex;
+    gap: 5px;
+    word-wrap: break-word; /* Ensure long links wrap */
+    overflow-wrap: break-word;
+    
+}
+
+.boxes {
+    display: flex;
+    gap: 5px;
+}
+
+.boxes h3 {
     margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff4081; /* Vibrant pink */
+}
+
+/* Section Styling */
+section {
+    padding: 30px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: #f0f8ff; /* Light blue background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Section Hover */
+section:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .navbar ul {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller font size to fit within the container */
+        padding: 0px; /* Reduce padding for mobile */
+        margin: 0px;
+        
+    }
+
+    .navbar h1 {
+        font-size: 1.8em; 
+    }
+    
+}
+
+@media (min-width: 601px) {
+    .navbar ul {
+        width: 60%;
+        background-color: #ffd700;
+    }
+
+    .navbar h1 {
+        font-family: 'Verdana', sans-serif;
+        color: #ff4500;
+    }
+
+    .navbar ul li {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 20px;
+    }
+
+    .navbar a {
+        color: #000;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar ul {
+        width: 50%;
+        background-color: lightyellow;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar ul {
+        width: 40%;
+        background-color: #ffeb3b;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar ul {
+        width: 30%;
+        background-color: #ff5722;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-top: 5px solid #ff9800;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2); /* Shadow at the top of footer */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Image Styling */
+img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
+}
+
+body {
+    background-color: lightskyblue;
+}
+.box a{
+margin-left: 10px;
+    
 }
