@@ -42,9 +42,9 @@
 /* Columns and Boxes Layout */
 .columns {
     display: flex;
-    gap: 5px;
-    word-wrap: break-word; /* Ensure long links wrap */
-    overflow-wrap: break-word;
+    flex-direction: row;
+    
+    
     
 }
 
@@ -92,6 +92,9 @@ section:hover {
 
     .navbar h1 {
         font-size: 1.8em; 
+    }
+    .boxes{
+        flex-direction: column;/* switched from rown to collums to fit smaller screens.*/
     }
     
 }
