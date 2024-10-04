@@ -94,7 +94,7 @@ section:hover {
         font-size: 1.8em; 
     }
     .boxes{
-        flex-direction: column;/* switched from rown to collums to fit smaller screens.*/
+        flex-direction: column;/* switched from row to collums to fit smaller screens.*/
     }
     
 }
